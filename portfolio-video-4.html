@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="차은정">
+    <meta name="keywords" content="after effects, 모션그래픽, 타이틀, 인터랙션, 포트폴리오">
+    <meta name="description" content="다양한 모션그래픽 기법을 실험한 타이틀 및 인터랙션 영상, Motion Design 프로젝트입니다.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/차은정파비콘완성.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+
+    <title>Motion Design | 차은정 포트폴리오</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body tabindex="0">
+
+    <header id="header" class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <img class="logo-img" src="./images/차은정파비콘완성.png" alt="EJ 로고">
+                    EJ. Portfolio
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="nav-link active" aria-current="page">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="main video-detail-page">
+
+        <!-- Breadcrumb banner -->
+        <div class="video-detail-banner">
+            <div class="container">
+                <nav class="video-detail-breadcrumb" aria-label="breadcrumb">
+                    <a href="index.html">Home</a><span class="video-detail-breadcrumb-sep" aria-hidden="true">/</span><span>Portfolio Details</span>
+                </nav>
+                <h1 class="video-detail-banner-title">Portfolio Details</h1>
+            </div>
+        </div>
+
+        <!-- Project hero: eyebrow + title + subtitle, video + meta sidebar -->
+        <section class="py-5 my-4">
+            <div class="container py-4">
+                <div class="text-center">
+                    <p class="video-detail-eyebrow">PORTFOLIO DETAILS</p>
+                    <h2 class="video-detail-title">Motion Design</h2>
+                    <p class="video-detail-subtitle">
+                        다양한 모션그래픽 기법을 실험한 타이틀 및 인터랙션 영상입니다.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-8">
+                        <div class="video-detail-player ratio ratio-16x9">
+                            <video controls playsinline preload="metadata" poster="./images/motion-design.png">
+                                <source src="./videos/motion-design.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="video-detail-sidebar">
+                            <h3 class="video-detail-sidebar-title">Project Details</h3>
+                            <dl class="video-detail-meta-list">
+                                <div class="video-detail-meta-row">
+                                    <dt>Category</dt>
+                                    <dd>Motion Graphics</dd>
+                                </div>
+                                <div class="video-detail-meta-row">
+                                    <dt>Date</dt>
+                                    <dd>Apr 22, 2026</dd>
+                                </div>
+                                <div class="video-detail-meta-row">
+                                    <dt>Duration</dt>
+                                    <dd>2 Weeks</dd>
+                                </div>
+                            </dl>
+
+                            <div class="video-detail-tools">
+                                <h4 class="video-detail-tools-title">Project Tools</h4>
+                                <ul class="video-detail-tools-list">
+                                    <li class="video-detail-tool-item">
+                                        <input type="checkbox" id="tool-motion-figma" disabled>
+                                        <label for="tool-motion-figma">Figma</label>
+                                    </li>
+                                    <li class="video-detail-tool-item">
+                                        <input type="checkbox" id="tool-motion-photoshop" disabled>
+                                        <label for="tool-motion-photoshop">Photoshop</label>
+                                    </li>
+                                    <li class="video-detail-tool-item">
+                                        <input type="checkbox" id="tool-motion-illustrator" disabled>
+                                        <label for="tool-motion-illustrator">Illustrator</label>
+                                    </li>
+                                    <li class="video-detail-tool-item is-checked">
+                                        <input type="checkbox" id="tool-motion-ae" checked disabled>
+                                        <label for="tool-motion-ae">After Effects</label>
+                                    </li>
+                                    <li class="video-detail-tool-item">
+                                        <input type="checkbox" id="tool-motion-pr" disabled>
+                                        <label for="tool-motion-pr">Premiere Pro</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="py-5 my-4 bg-light">
+            <div class="container py-4">
+                <div class="section-title-block">
+                    <h2 class="section-title">About the Project</h2>
+                    <div class="section-title-underline"></div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="project-section-text">
+                            After Effects를 활용해 다양한 타이틀 애니메이션과 인터랙션 연출 기법을
+                            실험한 영상입니다. 타이포그래피 움직임과 화면 전환 리듬감을 중심으로
+                            여러 모션그래픽 스타일을 시도했습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- More Projects: 3D Coverflow slider (excludes this page's own project) -->
+        <section class="more-projects-section">
+            <div class="more-projects-heading">
+                <h2>More Projects</h2>
+                <p>다른 작품들도 함께 둘러보세요</p>
+            </div>
+
+            <div class="swiper more-projects-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="https://jeffreymom.github.io/j-portfolio/" class="more-projects-card" aria-label="EJ Creative Portfolio 자세히 보기" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/thumb-01-ej-creative-portfolio.png" alt="EJ Creative Portfolio 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">WEB / UI</span>
+                            <div class="more-projects-overlay">
+                                <strong>EJ Creative Portfolio</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./mellow-camp.html" class="more-projects-card" aria-label="Mellow Camp UI/UX & Figma Design 자세히 보기">
+                            <img src="./images/thumb-02-mellow-camp-uiux.png" alt="Mellow Camp UI/UX & Figma Design 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">WEB / UI</span>
+                            <div class="more-projects-overlay">
+                                <strong>Mellow Camp UI/UX &amp; Figma Design</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="https://jeffreymom.github.io/motion-lab/" class="more-projects-card" aria-label="EJ MotionLab 자세히 보기" target="_blank" rel="noopener noreferrer">
+                            <img src="./images/thumb-03-ej-motionlab.png" alt="EJ MotionLab 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">WEB / UI</span>
+                            <div class="more-projects-overlay">
+                                <strong>EJ MotionLab</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./everguard.html" class="more-projects-card" aria-label="EVERGUARD Brand Identity 자세히 보기">
+                            <img src="./images/thumb-04-everguard-brand-identity.png" alt="EVERGUARD Brand Identity 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">GRAPHIC</span>
+                            <div class="more-projects-overlay">
+                                <strong>EVERGUARD Brand Identity</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./eider-campaign.html" class="more-projects-card" aria-label="Eider Safety Tri-Fold Leaflet Design 자세히 보기">
+                            <img src="./images/thumb-05-eider-safety-trifold-leaflet.png" alt="Eider Safety Tri-Fold Leaflet Design 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">EDITORIAL</span>
+                            <div class="more-projects-overlay">
+                                <strong>Eider Safety Tri-Fold Leaflet Design</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./gyeongju-poster.html" class="more-projects-card" aria-label="Gyeongju Cultural Festival Poster 자세히 보기">
+                            <img src="./images/thumb-06-gyeongju-cultural-festival.png" alt="Gyeongju Cultural Festival Poster 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">GRAPHIC</span>
+                            <div class="more-projects-overlay">
+                                <strong>Gyeongju Cultural Festival Poster</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./pengdori.html" class="more-projects-card" aria-label="Pengdori Character Design 자세히 보기">
+                            <img src="./images/thumb-07-pengdori-character-design.png" alt="Pengdori Character Design 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">CHARACTER</span>
+                            <div class="more-projects-overlay">
+                                <strong>Pengdori Character Design</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./portfolio-video-1.html" class="more-projects-card" aria-label="Miss Dior Product AD 자세히 보기">
+                            <img src="./images/thumb-08-miss-dior-product-ad.jpg" alt="Miss Dior Product AD 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">VIDEO</span>
+                            <div class="more-projects-overlay">
+                                <strong>Miss Dior Product AD</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./portfolio-video-2.html" class="more-projects-card" aria-label="AI Safety Shoe AD 자세히 보기">
+                            <img src="./images/thumb-09-ai-safety-shoe-ad.jpg" alt="AI Safety Shoe AD 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">VIDEO</span>
+                            <div class="more-projects-overlay">
+                                <strong>AI Safety Shoe AD</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./portfolio-video-3.html" class="more-projects-card" aria-label="AI Cosmetics AD 자세히 보기">
+                            <img src="./images/thumb-10-ai-cosmetics-ad.jpg" alt="AI Cosmetics AD 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">VIDEO</span>
+                            <div class="more-projects-overlay">
+                                <strong>AI Cosmetics AD</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide more-projects-slide">
+                        <a href="./portfolio-video-5.html" class="more-projects-card" aria-label="Slide Show 자세히 보기">
+                            <img src="./images/thumb-12-slide-show.jpg" alt="Slide Show 썸네일" class="more-projects-image" loading="lazy">
+                            <span class="more-projects-category">MOTION</span>
+                            <div class="more-projects-overlay">
+                                <strong>Slide Show</strong>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination more-projects-pagination"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer bg-dark py-4">
+        <div class="container text-center text-white-50">
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://www.instagram.com/jeffreymom_?utm_source=qr" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                <a href="https://youtube.com/channel/UCrbnqWOwD2SfGnQJ9VqlPsA?si=srikTHkJJjBekJJ8" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            </div>
+
+            <div class="footer-copyright">
+             <p>
+                © 2026
+                <a href="index.html#home" class="footer-a text-white">
+                <strong>EJ Portfolio</strong>
+                </a> . All rights reserved.
+
+             </p>
+
+             <p>
+                Designed &amp; Developed by
+                <strong>EJ Cha</strong>
+             </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="차은정">
+    <meta name="keywords" content="html, css, 웹디자인, UI/UX, 모션그래픽, 포트폴리오">
+    <meta name="description" content="웹디자인, UI/UX, 모션그래픽을 공부하며 실무형 포트폴리오를 만들어가고 있는 차은정의 개인 포트폴리오입니다. Photoshop, Illustrator, Premiere Pro, After Effects, HTML, CSS, JavaScript를 활용해 브랜드와 제품을 시각적으로 표현하는 작업에 관심이 있습니다.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- favicon -->
+    <link rel="icon" href="./images/차은정파비콘완성.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+
+    <title>차은정 포트폴리오</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="90" tabindex="0">
+
+    <header id="header" class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a href="#home" class="navbar-brand">
+                    <img class="logo-img" src="./images/차은정파비콘완성.png" alt="EJ 로고">
+                    EJ. Portfolio
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbarNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="main">
+
+        <!-- Hero -->
+        <section id="home" class="section-hero">
+            <video class="hero-bg-media" autoplay muted loop playsinline poster="./images/motion-design.png">
+                <source src="./videos/motion-design.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <span class="hero-badge">SHOWREEL · AD CREATOR</span>
+                <h1 class="hero-poster-title">Eunjeong Cha</h1>
+                <p class="hero-text">
+                    브랜드와 제품을 감각적으로 움직이게 만드는 광고 크리에이터,
+                    <span class="text-accent">차은정</span>입니다. <br class="pc-br">
+                    웹디자인·모션그래픽·영상 연출로 브랜드의 메시지를 인상적인 장면으로 완성합니다.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="#portfolio" class="btn btn-light px-4 py-2 fw-semibold">포트폴리오 보기</a>
+                    <a href="contact.html" class="btn btn-outline-light px-4 py-2">연락하기</a>
+                </div>
+                <div class="hero-meta">Since 2026 · Busan, KR · Web · Motion · Ad</div>
+            </div>
+
+            <button type="button" id="muteToggle" class="hero-mute-btn">Unmute</button>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="home-about-editorial">
+            <div class="container">
+                <div class="home-about-editorial-grid">
+                    <div class="home-about-editorial-left home-about-editorial-fade">
+                        <p class="home-about-editorial-kicker">
+                            <span class="home-about-editorial-num">01</span> ABOUT
+                        </p>
+                        <h2 class="home-about-editorial-title">
+                            I connect design,<br>
+                            <em>motion</em> and digital experiences.
+                        </h2>
+                        <p class="home-about-editorial-text">
+                            그래픽, 영상과 웹 UI를 연결해<br>
+                            아이디어를 실제 콘텐츠로 구현합니다.
+                        </p>
+                        <p class="home-about-editorial-roles">Graphic Design · Motion & Video · Web UI · AI Content</p>
+                        <a href="./about.html" class="home-about-editorial-link">
+                            View Profile <span class="home-about-editorial-arrow">&rarr;</span>
+                        </a>
+                    </div>
+
+                    <div class="home-about-editorial-right home-about-editorial-fade">
+                        <div class="home-about-info">
+                            <div class="home-about-info-block">
+                                <span class="home-about-info-label">Focus</span>
+                                <p class="home-about-info-value">Graphic · Motion · Web UI</p>
+                            </div>
+                            <div class="home-about-info-block">
+                                <span class="home-about-info-label">Main Tools</span>
+                                <p class="home-about-info-value">
+                                    Photoshop · Illustrator<br>
+                                    Premiere Pro · After Effects<br>
+                                    Figma · HTML · CSS
+                                </p>
+                            </div>
+                            <div class="home-about-info-block">
+                                <span class="home-about-info-label">Based In</span>
+                                <p class="home-about-info-value">Busan, Korea</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio" class="py-5 my-4 bg-light">
+            <div class="container py-4">
+                <div class="section-title-block">
+                    <h2 class="section-title">Portfolio</h2>
+                    <div class="section-title-underline"></div>
+                    <p class="section-subtitle">차은정</p>
+                </div>
+
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요">
+
+                <div class="text-center mb-4 portfolio-filter-buttons">
+                    <button type="button" class="btn filter-btn active" data-filter="featured">추천작</button>
+                    <button type="button" class="btn filter-btn" data-filter="video">VIDEO</button>
+                    <button type="button" class="btn filter-btn" data-filter="web">WEB·UI</button>
+                    <button type="button" class="btn filter-btn" data-filter="graphic">GRAPHIC</button>
+                </div>
+
+                <div class="row">
+                    <!-- Featured 1/6 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="web" data-featured="true">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-01-ej-creative-portfolio.png" alt="EJ Creative Portfolio 웹사이트 디자인 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">WEB · UI</p>
+                                    <h4 class="portfolio-page-title-sm">EJ Creative Portfolio</h4>
+                                    <p class="portfolio-page-desc">HTML · CSS · JavaScript</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="https://jeffreymom.github.io/j-portfolio/" target="_blank" rel="noopener noreferrer" aria-label="EJ Creative Portfolio 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Featured 2/6 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="web" data-featured="true">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-02-mellow-camp-uiux.png" alt="Mellow Camp UI/UX & Figma Design 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">WEB · UI</p>
+                                    <h4 class="portfolio-page-title-sm">Mellow Camp UI/UX & Figma Design</h4>
+                                    <p class="portfolio-page-desc">Figma · UI/UX Design</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="./mellow-camp.html" aria-label="Mellow Camp UI/UX & Figma Design 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Featured 3/6 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic" data-featured="true">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-04-everguard-brand-identity.png" alt="EVERGUARD Brand Identity 브랜드 디자인 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">BRAND IDENTITY</p>
+                                    <h4 class="portfolio-page-title-sm">EVERGUARD Brand Identity</h4>
+                                    <p class="portfolio-page-desc">Illustrator · Photoshop</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="./everguard.html" aria-label="EVERGUARD Brand Identity 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Featured 4/6: VIDEO — 가운데 재생 버튼은 index.html의 기존 #modal3(Miss Dior)을 그대로 재사용 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="video" data-featured="true">
+                        <article class="portfolio-thumb-card portfolio-thumb-card--video">
+                            <img class="portfolio-thumb-image" src="./images/thumb-08-miss-dior-product-ad.jpg" alt="Miss Dior Product AD 영상 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">VIDEO</p>
+                                    <h4 class="portfolio-page-title-sm">Miss Dior Product AD</h4>
+                                    <p class="portfolio-page-desc">After Effects · Premiere Pro</p>
+                                </div>
+                            </div>
+                            <button type="button" class="portfolio-thumb-play-btn" data-bs-toggle="modal" data-bs-target="#modal3" aria-label="Miss Dior Product AD 영상 재생">
+                                <i class="bi bi-play-fill" aria-hidden="true"></i>
+                            </button>
+                            <a class="portfolio-thumb-detail-btn" href="./portfolio-video-1.html" aria-label="Miss Dior Product AD 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Featured 5/6: VIDEO — #modal9(AI Safety Shoe AD) 재사용 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="video" data-featured="true">
+                        <article class="portfolio-thumb-card portfolio-thumb-card--video">
+                            <img class="portfolio-thumb-image" src="./images/thumb-09-ai-safety-shoe-ad.jpg" alt="AI Safety Shoe AD 영상 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">VIDEO</p>
+                                    <h4 class="portfolio-page-title-sm">AI Safety Shoe AD</h4>
+                                    <p class="portfolio-page-desc">Premiere Pro · AI Content</p>
+                                </div>
+                            </div>
+                            <button type="button" class="portfolio-thumb-play-btn" data-bs-toggle="modal" data-bs-target="#modal9" aria-label="AI Safety Shoe AD 영상 재생">
+                                <i class="bi bi-play-fill" aria-hidden="true"></i>
+                            </button>
+                            <a class="portfolio-thumb-detail-btn" href="./portfolio-video-2.html" aria-label="AI Safety Shoe AD 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Featured 6/6: VIDEO — #modal13(AI Cosmetics AD) 재사용 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="video" data-featured="true">
+                        <article class="portfolio-thumb-card portfolio-thumb-card--video">
+                            <img class="portfolio-thumb-image" src="./images/thumb-10-ai-cosmetics-ad.jpg" alt="AI Cosmetics AD 영상 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">VIDEO</p>
+                                    <h4 class="portfolio-page-title-sm">AI Cosmetics AD</h4>
+                                    <p class="portfolio-page-desc">Premiere Pro · AI Content</p>
+                                </div>
+                            </div>
+                            <button type="button" class="portfolio-thumb-play-btn" data-bs-toggle="modal" data-bs-target="#modal13" aria-label="AI Cosmetics AD 영상 재생">
+                                <i class="bi bi-play-fill" aria-hidden="true"></i>
+                            </button>
+                            <a class="portfolio-thumb-detail-btn" href="./portfolio-video-3.html" aria-label="AI Cosmetics AD 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- WEB·UI (non-featured) -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="web" data-featured="false">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-03-ej-motionlab.png" alt="EJ MotionLab 모션 인터랙션 쇼케이스 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">WEB · UI</p>
+                                    <h4 class="portfolio-page-title-sm">EJ MotionLab</h4>
+                                    <p class="portfolio-page-desc">HTML · CSS · JavaScript</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="https://jeffreymom.github.io/motion-lab/" target="_blank" rel="noopener noreferrer" aria-label="EJ MotionLab 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- GRAPHIC (non-featured) -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic" data-featured="false">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-05-eider-safety-trifold-leaflet.png" alt="Eider Safety Campaign 프로모션 배너 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">GRAPHIC DESIGN</p>
+                                    <h4 class="portfolio-page-title-sm">Eider Safety Campaign & Figma Design</h4>
+                                    <p class="portfolio-page-desc">Figma · Graphic Design</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="./eider-campaign.html" aria-label="Eider Safety Campaign & Figma Design 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic" data-featured="false">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-06-gyeongju-cultural-festival.png" alt="Gyeongju Cultural Festival Poster 포스터 디자인 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">GRAPHIC DESIGN</p>
+                                    <h4 class="portfolio-page-title-sm">Gyeongju Cultural Festival Poster</h4>
+                                    <p class="portfolio-page-desc">Photoshop · Illustrator</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="./gyeongju-poster.html" aria-label="Gyeongju Cultural Festival Poster 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- VIDEO (non-featured) — #modal10(Motion Design) 재사용 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="video" data-featured="false">
+                        <article class="portfolio-thumb-card portfolio-thumb-card--video">
+                            <img class="portfolio-thumb-image" src="./images/thumb-11-motion-design.jpg" alt="Motion Design 영상 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">VIDEO</p>
+                                    <h4 class="portfolio-page-title-sm">Motion Design</h4>
+                                    <p class="portfolio-page-desc">After Effects</p>
+                                </div>
+                            </div>
+                            <button type="button" class="portfolio-thumb-play-btn" data-bs-toggle="modal" data-bs-target="#modal10" aria-label="Motion Design 영상 재생">
+                                <i class="bi bi-play-fill" aria-hidden="true"></i>
+                            </button>
+                            <a class="portfolio-thumb-detail-btn" href="./portfolio-video-4.html" aria-label="Motion Design 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="graphic" data-featured="false">
+                        <article class="portfolio-thumb-card">
+                            <img class="portfolio-thumb-image" src="./images/thumb-07-pengdori-character-design.png" alt="Pengdori Character Design 캐릭터 디자인 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">CHARACTER DESIGN</p>
+                                    <h4 class="portfolio-page-title-sm">Pengdori Character Design</h4>
+                                    <p class="portfolio-page-desc">Illustrator</p>
+                                </div>
+                            </div>
+                            <a class="portfolio-thumb-detail-btn" href="./pengdori.html" aria-label="Pengdori Character Design 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- VIDEO (non-featured) — #modal12(Slide Show) 재사용 -->
+                    <div class="col-lg-4 col-md-6 portfolio-item" data-category="video" data-featured="false">
+                        <article class="portfolio-thumb-card portfolio-thumb-card--video">
+                            <img class="portfolio-thumb-image" src="./images/thumb-12-slide-show.jpg" alt="Slide Show 영상 썸네일" loading="lazy">
+                            <div class="portfolio-thumb-overlay">
+                                <div class="portfolio-thumb-info">
+                                    <p class="portfolio-page-category">VIDEO</p>
+                                    <h4 class="portfolio-page-title-sm">Slide Show</h4>
+                                    <p class="portfolio-page-desc">After Effects</p>
+                                </div>
+                            </div>
+                            <button type="button" class="portfolio-thumb-play-btn" data-bs-toggle="modal" data-bs-target="#modal12" aria-label="Slide Show 영상 재생">
+                                <i class="bi bi-play-fill" aria-hidden="true"></i>
+                            </button>
+                            <a class="portfolio-thumb-detail-btn" href="./portfolio-video-5.html" aria-label="Slide Show 상세보기">
+                                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="videoLoadMoreWrap" class="portfolio-load-more-wrap" hidden>
+                    <button type="button" id="videoLoadMoreBtn" class="btn load-more-btn">Load More</button>
+                </div>
+
+                <div class="portfolio-view-all-wrap">
+                    <a href="./portfolio.html" class="portfolio-view-all-link">View All Projects <span class="portfolio-view-all-arrow">&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div class="modal" id="modal1" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">EJ Creative Portfolio</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/EJ_Portfolio.png" class="img-fluid rounded" alt="EJ Creative Portfolio">
+                        <p class="mt-3 mb-0">개인 브랜드를 소개하는 포트폴리오 웹사이트 UI 디자인 작업입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">EJ MotionLab</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/차은정-모션그래픽홈페이지.png" class="img-fluid rounded" alt="EJ MotionLab">
+                        <p class="mt-3 mb-0">CSS 애니메이션과 JavaScript 인터랙션을 연습하며 만든 모션 쇼케이스 웹디자인입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Miss Dior Product AD</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video controls playsinline preload="metadata" poster="./images/dior-ad.png">
+                                <source src="./videos/miss-dior-product-ad.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="mt-3 mb-0">향수 제품 촬영과 편집으로 완성한 광고 영상입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Flowbit Dashboard UI</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/피그마2.png" class="img-fluid rounded" alt="Flowbit Dashboard UI">
+                        <p class="mt-3 mb-0">자동화 워크플로우를 관리하는 대시보드 UI 디자인 작업입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal6" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cosmos Field</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/코스모스사진1.png" class="img-fluid rounded" alt="Cosmos Field">
+                        <p class="mt-3 mb-0">자연광을 활용해 담아낸 코스모스 꽃밭 감성 사진입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal7" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Miss Dior Still Cut</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/화장품사진1.png" class="img-fluid rounded" alt="Miss Dior Still Cut">
+                        <p class="mt-3 mb-0">향수 제품의 분위기를 살린 스틸컷 촬영입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal8" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wireless Mouse AD Cut</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./images/마우스사진1.png" class="img-fluid rounded" alt="Wireless Mouse AD Cut">
+                        <p class="mt-3 mb-0">제품 광고를 위한 무선 마우스 스틸컷 촬영입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal9" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">AI Safety Shoe AD</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video controls playsinline preload="metadata">
+                                <source src="./videos/ai-safety-shoe-ad.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="mt-3 mb-0">AI로 만든 소재를 활용해 기획하고, 프리미어 프로로 직접 편집한 안전화 광고 영상입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal13" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">AI Cosmetics AD</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video controls playsinline preload="metadata">
+                                <source src="./videos/ai-new-cosmetics-ad.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="mt-3 mb-0">AI로 만든 소재를 활용해 기획하고 편집한 화장품 광고 영상입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal10" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Motion Design</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video controls playsinline preload="metadata">
+                                <source src="./videos/motion-design.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="mt-3 mb-0">다양한 모션그래픽 기법을 실험한 타이틀 및 인터랙션 영상입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal11" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Split Screen Expression</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video controls playsinline preload="metadata">
+                                <source src="./videos/split-screen-expression.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="mt-3 mb-0">애프터이펙트 익스프레션을 활용한 화면 분할 연출 영상입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modal12" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Slide Show</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ratio ratio-16x9">
+                            <video controls playsinline preload="metadata">
+                                <source src="./videos/slide-show.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="mt-3 mb-0">칸별로 영상을 배치해서 구성한 슬라이드쇼 영상입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer" class="footer bg-dark py-4">
+        <div class="container text-center text-white-50">
+            <div class="social-links d-flex justify-content-center">
+                <a href="https://www.instagram.com/jeffreymom_?utm_source=qr" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                <a href="https://youtube.com/channel/UCrbnqWOwD2SfGnQJ9VqlPsA?si=srikTHkJJjBekJJ8" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+            </div>
+            
+            <div class="footer-copyright">
+             <p>
+                © 2026 
+                <a href="#home" class="footer-a text-white">
+                <strong>EJ Portfolio</strong>
+                </a> . All rights reserved.
+                
+             </p>
+
+             <p>
+                Designed &amp; Developed by
+                <strong>EJ Cha</strong>
+             </p>
+            </div>
+
+            <div class="footer-legal">
+                <p>© 2026 Cha Eunjeong. All rights reserved. 본 포트폴리오의 디자인, 이미지, 영상 및 소스 코드는 사전 허가 없이 복제, 수정, 재배포 또는 상업적 이용할 수 없습니다. 사용을 원할 경우 먼저 문의해 주세요.</p>
+                <p>All works are protected by copyright. Permission is required before copying, modifying, redistributing, or using any part commercially.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

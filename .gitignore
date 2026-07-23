@@ -1,0 +1,27 @@
+# Backup / temporary files (not referenced by the live site)
+index-backup.html
+*.bak
+*.tmp
+*~
+*.orig
+*- 복사본.*
+*copy.mp4
+*copy.png
+*copy.jpg
+
+# Unused duplicate / raw footage not referenced by any page
+images/차은정-제품촬영광고최종.mp4
+images/차은정-제품촬영광고최종 copy.mp4
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / tool local config (not part of the site)
+.claude/
+.vscode/
+
+# Cache / render temp folders
+*.cache
+node_modules/
