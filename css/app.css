@@ -3444,6 +3444,7 @@ a {
   position: absolute;
   inset: 0;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   padding: 16px;
   background: linear-gradient(180deg, rgba(12, 12, 18, 0) 45%, rgba(12, 12, 18, 0.72) 100%);
